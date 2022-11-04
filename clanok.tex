@@ -1,31 +1,27 @@
-% Metódy inžinierskej práce
+
 
 \documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[IL2]{fontenc} 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{url} 
+\usepackage{hyperref} 
 
 \usepackage{cite}
-%\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Budúcnosť cloudového hrania \thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/23, vedenie: Vladimír Mlynarovič}} 
 
 \author{Samuel Jantošovič\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xjantosovic@stuba.sk}}
 	}
 
-\date{\small 30. september 2022} % upravte
-
-
+\date{\small 6. november 2022}
 
 \begin{document}
 
@@ -33,92 +29,44 @@
 
 \begin{abstract}
 \ldots
+V posledných rokoch vzrástla popularita cloudového hrania keďže vďaka technickému pokroku sa zmenila myšlienka cloudového hrania na realitu. Výkon potrebný na hranie hier je sprostredkovaný cez servery v cloude. Na vašich zariadeniach sa zobrazí výsledok tohto streamovaného výpočtu podobne ako načítanie webovej stránky v prehliadači. Rozoberieme si princíp fungovania cloudového hrania jeho začiatky a vývoj. Jeho výhody a tiež problémy ktoré sú s ním spojené. Porovnáme služby najväčších komerčných sprostredkovateľov na trhu. Skutočný potenciál cloudového hrania, jeho podporu a porovnanie s reálnym hardvérom. Rovnako sa pozrieme aj na mobilné zariadenia, pretože tento spôsob hrania nie je určený len pre počítače. 
+Motivujte čitateľa a vysvetlite, o čom píšete.
 \end{abstract}
 
-
-
 \section{Úvod}
-
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
-
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+Cloud je virtuálny priestor v dátových centrách. Prevádzkovateľ poskytuje klientom prostredníctvom internetu prístup k svojím dátam, ktoré sú uložené v dátovom centre na fyzických serveroch. Nezaťažujú tak hardvér ani softvér zariadení, s ktorým vstupujeme do služby. A tak zjednodušujú tok dát a ich zdieľanie medzi používateľmi. Cloudové služby majú široké využitie od zdieľania súborov a synchronizácie dokumentov až po streamovanie médií. V poslednom období zaznamenali veľký skok vpred v oblasti efektívnosti a použiteľnosti systému. Medzi najväčšie výhody cloudových služieb patrí predovšetkým prístupnosť z rôznych zariadení, škálovateľnosť či automatické zálohovanie dát. Samozrejme, s využívaním rôznych aplikácií a funkcií sú spojené aj nevýhody. Sem môžeme zaradiť napríklad menšiu kontrolu nad dátami či závislosť na technickej a bezpečnostnej podpore tretích strán. Prenos videa je populárnejší ako kedy bol a zaberá 60,6 percent celého internetu. Služby, ktoré poskytujúce streamovanie videa ako Netflix, Disney+ či Amazon Prime Video majú každý desiatky miliónov predplatiteľov. Platformy ako Youtube, ktorý má 2 miliardy prihlásených používateľov každý mesiac či Twich s priemerom okolo 2 miliónov súčasných používateľov. Ďalším krokom je teda prenos hier čím vypadáva potreba vlastniť drahé herné zariadenie.~\cite{6}
 
 
 
-\section{Nejaká časť} \label{nejaka}
+\section{Začiatky fungovania cloudového hrania:} 
+Cloudové hranie je tu s nami už od začiatku 21. storočia kedy sa ako prvý objavil Fínsky poskytovateľ a to firma G-cluster. Táto služba bola úzko previazaná so spoločnosťami tretích strán, ako napríklad s hernými vývojármi, prevádzkovateľmi sietí a hernými portálmi. Nízka vyspelosť internetového pripojenia a malý počet dátových centier prinútil G-cluster využívať služby sieťových operátorov. Ale s blížiacim sa prelomom desaťročí pribúdali nové spoločnosti ako Gaikai a Onlive, ktoré ponúkali lepšie služby. Vymenili podporu cez operátorov za všadeprítomný prístup ku cloudovým hrám. Gaikai bola platforma, ktorá od roku 2008 ponúkala podobné služby ako dnes väčšina tohto trhu a to hranie nových hier bez priameho zakúpenia a taktiež bez inštalácie hry na vaše zariadenie. Túto spoločnosť odkúpila v roku 2012 firma Sony, čo neskôr viedlo k spusteniu služby Playstation Now v 2014. Rovnako Sony odkúpilo patent firmy Onlive a tá tak v roku 2015 ukončila svoju činnosť. Sony tak urobila presný opak toho čo by sa od nich dalo čakať. Keďže panovala otázka či budú najväčší výrobcovia konzol ako Microsoft, Nintendo a spomínané Sony ochotný vzdať sa podstatnej časti ich príjmov a to v podobe predaja konzol. S funkciou Playstation Now Sony umožnilo hrať stovky herných titulov z PS3 na PS4 bez prenášania hier.~\cite{2}
 
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
-
-
-
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
+\section{Problémy a výzvy:} 
+Cloudové hranie čelí mnohým problémom, systém zbiera akcie hráča a presúva ich na cloudový server kde ich spracuje, vykreslí výsledky a tie následne skomprimuje a pošle späť na obrazovku. Všetky tieto procesy sa dejú v milisekundách aby hráči mali dostatočnú interaktivitu v hre. Toto oneskorenie interakcie môžeme to rozdeliť na 4 podkategórie ktoré tvoria celkové oneskorenie:
 
 \begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
+\item Oneskorenie siete
+\item Oneskorenie hry
+\item Oneskorenie spracovania
+\item Oneskorenie prehrávania
 \end{itemize}
+Najlepším spôsobom ako znížiť odozvu je určite znížiť vzdialenosť medzi servermi a hráčmi. Čo znamená vybudovať obrovskú sieť dátových centier poskytujúcich výpočtovú kapacitu pre hry.
 
-Ten istý zoznam, len číslovaný:
+Zaujímavá je aj štúdia týkajúca sa maximálnej veľkosti oneskorenia pri rôznych herných žánroch. Kde si môžeme ukázať rozdiely najväčšieho oneskorenia, ktoré nebude mať vplyv na celkový dojem z hry. Napríklad pri hraní hier z prvej osoby (kedy ide o akčné hry ako Call of Duty, Cyberpunk 2077, Counter Strike a ďalšie) sa hra stáva výrazne menej hrateľnou pri oneskorení cez 100 ms. Keďže v týchto hrách ide o to kto prvý stlačí spúšť, hráči s väčším oneskorením sa dostávajú do nevýhody.~\cite{5}
 
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
+Ďalším bodom je kompresia zdieľaného obrazu za účelom zníženia množstva dát, ktoré sa odosielajú späť na vaše zariadenie. Kompresia videa je dôvod prečo väčšina ľudí uprednostňuje hardvérovú formu hrania pred hraním v cloude. Podobne ako na Youtube a u iných poskytovateľov je obraz komprimovaný aby zaberal čo najmenšie miesto na sieti. Takže obraz nebude dosahovať takú kvalitu v porovnaní s bežným hraním. 
+\section{Výhody:} 
+Nie sú tu potrebné žiadne nízke ani vysoké špecifikácie na hardvér. Pretože cloud umožňuje hrať kedykoľvek a na akomkoľvek zariadení pri dodržiavaní podmienok platformy. Ak je k dispozícií kvalitné a stabilné pripojenie k serveru mali by ste byť schopný pripojiť sa z každého miesta na svete. Ďalšou témou je predplácanie hier na každý mesiac, ktoré má svoje výhody a po zakúpení sa ocitnete pred nekončiacim katalógom hier, z ktorých si môžete vyberať.
 
+\section{Potenciál:} 
 
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+\section{Platformy cloudového hrania:} 
+V tejto časti preskúmame niektoré z najlepších služieb dostupných v dnešnej dobe. Microsoft má svoju službu XCloud, ktorá ponúka hranie svojich hier na Android telefónoch a tabletoch. Nvidia a ich GeForce Now, kde môžu hrať hry predtým kúpených v online obchodoch na Mac, Microsoft a Android zariadeniach. Ako posledný vstúpil aj Google s platformou Stadia spustenou v roku 2019. Stadia má svoj vlastný obchod s hrami a predplatné, kde každý mesiac ponúkajú hry zdarma. ~\cite{3} ~\cite{6}
 
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+\section{Záver} 
+V tomto čase je cloudové hranie v prechodnej fáze. Zatiaľ sa mu nepodarilo nahradiť tradičný spôsob kupovania a hrania hier doma. Technológie sa menia neustále takže je len otázka času a čoskoro môže byť štandardná dĺžka pásma pre tento spôsob hrania dostatočne vyhovujúca požiadavkám hráčov. V súčasnosti ale rýchlosť a kvalita herného hardvéru predstavuje silný argument medzi cloudovým hraním a hardvérom.
 
 
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliography{literatura.bib}
+\bibliographystyle{plain}
 \end{document}
